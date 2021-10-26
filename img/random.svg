@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="210" width="400">
+  <path d="M150 0 L75 200 L225 200 L100 100 L25 24"  />
+  <path d="M1 0 L25 400 L100 100" fill="transparent" stroke="blue" />
+  <path d="M1 0 L0 500 L100 100" fill="transparent" stroke="red" />
+</svg>
+
+// AuctionV2 contract
+
+https://rinkeby.etherscan.io/address/0x5Ad7106acDe1078185BaA5c38d2218656B6dc3BA#code
+
+// Test Create AuctionV2
+https://rinkeby.etherscan.io/tx/0x78bc1f600efba8a0c2c7152202040ed316ffe850f791a6be53540bfe9e428b58

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="500" width="500">
+  <path d="M211 393 L406 402 " fill="transparent" stroke="yellow"/>
+  <path d="M269 491 L37 48 " fill="transparent" stroke="black"/>
+  <path d="M243 398 L86 444 " fill="transparent" stroke="blue"/>
+  <path d="M261 440 L212 84 " fill="transparent" stroke="white"/>
+  <path d="M148 213 L57 493 " fill="transparent" stroke="red"/>
+</svg>
