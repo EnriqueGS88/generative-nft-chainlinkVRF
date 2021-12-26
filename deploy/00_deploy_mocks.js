@@ -19,4 +19,4 @@ module.exports = async({
     }
 }
 
-module.exports.tags = [ 'all', 'rsvg', 'svg' ]
+module.exports.tags = [ 'all']
