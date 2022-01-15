@@ -253,7 +253,7 @@ constructor(address _VRFCoordinator, address _LinkToken, bytes32 _keyHash, uint2
                     " ") 
                 );
         }
-        // Build script for the SVG image
+        // Build script for the SVG image - extend here the complexity of the image
         // Parameters to set the origin pixel coordinate on the SVG
         uint256 parameterOne = uint256(keccak256(abi.encode(_randomNumber, size * 2))) % size;
         uint256 parameterTwo = uint256(keccak256(abi.encode(_randomNumber, size * 5))) % size;
