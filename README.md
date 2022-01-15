@@ -1,2 +1,3 @@
 # generative-nft-chainlinkVRF
-Generate an NFT image from a random number provided by Chainlink VRF
+Generate an SVG based on verifiable random number provided by ChainlinkVRF smart contract.
+Then store that SVG code on-chain on the block that mined your transaction.
