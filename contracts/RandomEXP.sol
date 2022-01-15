@@ -76,7 +76,18 @@ constructor(address _VRFCoordinator, address _LinkToken, bytes32 _keyHash, uint2
             "violet",
             "magenta",
             "slategrey"
-            ];
+        ];
+
+        backgroundColor = [
+            "#27f5e566", // magenta
+            "#cc88aa", // dirt pink
+            "#eb807d", // dark intense pink
+            "#f0dabb", // walnut light capuccino
+            "#050505", // dark black
+            "#4c453b", // light dark black
+            "#8866bb", // strong purple
+        ];
+        
 
     }
         /* Step by Step
