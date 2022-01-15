@@ -272,17 +272,20 @@ constructor(address _VRFCoordinator, address _LinkToken, bytes32 _keyHash, uint2
             );
     }
 
+
     function generatePathCommand(uint256 _randomNumber) public view returns (string
     memory pathCommand) {
+
         // pathCommand = pathCommands[_randomNumber % pathCommands.length];
         pathCommand = "L";
         uint256 parameterOne = uint256(keccak256(abi.encode(_randomNumber, size * 2))) % size;
         uint256 parameterTwo = uint256(keccak256(abi.encode(_randomNumber, size * 3))) % size;
+
         pathCommand = string(
             abi.encodePacked(
                 pathCommand, uint2str(parameterOne)," ", uint2str(parameterTwo)
-                )
-            );
+            )
+        );
     }
 
 

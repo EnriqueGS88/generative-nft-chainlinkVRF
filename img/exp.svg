@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" >
+  
+  <path d="M250 250 L490 250 " fill="transparent" stroke="#f52891cc"/>
+  <path d="M250 250 L475 270 " fill="transparent" stroke="darkred"/>
+  <path d="M250 250 L450 290 " fill="transparent" stroke="darkred"/>
+
+ <rect x="0" y="100" width="400" height="100" stroke="#27f5e566" fill="purple"
+       fill-opacity="0.1" stroke-opacity="0.8"/>
+
+  
+</svg>
