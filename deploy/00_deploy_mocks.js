@@ -19,4 +19,4 @@ module.exports = async({
     }
 }
 
-module.exports.tags = [ 'all']
+module.exports.tags = [ 'all00']

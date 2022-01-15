@@ -20,11 +20,19 @@ module.exports = async({
 
     if (chainId == 31337) {
     // this means we are on a test chain
-        let linkToken = await get('LinkToken')
-        linkTokenAddress = linkToken.address
-        let vrfCoordinatorMock = await get('VRFCoordinatorMock')
-        vrfCoordinatorAddress = vrfCoordinatorMock.address
     // in local network, _keyHash and _fee variables are not required
+        // let linkToken = await get('LinkToken')
+        // linkTokenAddress = linkToken.address
+        // let vrfCoordinatorMock = await get('VRFCoordinatorMock')
+        // vrfCoordinatorAddress = vrfCoordinatorMock.address
+        let LinkToken = await deploy('LinkToken', { from: deployer, log: true })
+        linkTokenAddress = LinkToken.address
+        let VRFCoordinatorMock = await deploy('VRFCoordinatorMock', { 
+            from: deployer,
+            log: true, 
+            args: [LinkToken.address]
+        })
+        vrfCoordinatorAddress = VRFCoordinatorMock.address
    } else {
         linkTokenAddress = networkConfig[chainId]['linkToken']
         vrfCoordinatorAddress = networkConfig[chainId]['vrfCoordinator']
@@ -94,4 +102,4 @@ module.exports = async({
 
 }
 
-module.exports.tags = ['all','rsvg']
+module.exports.tags = ['all02','rsvg']
